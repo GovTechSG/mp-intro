@@ -1,1 +1,3 @@
-A `reveal.js` presentation on our visit to 18F
+A `reveal.js` presentation on GDS micropurchase platform trial.
+
+Visit http://idagds.github.io/mp-intro/
