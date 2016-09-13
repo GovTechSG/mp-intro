@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>GovBuy</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						# GovBuy
+						## (Micropurchase platform)
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							How do we buy stuff in government?
+
+							(From our perspective)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							- Bulk Tenders
+							- Small Value Purchases
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Bulk Tenders
+							(> SGD5,000)
+
+							Most software and hardware systems in government are purchased this way
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Tender Process
+							1. Realise we need something
+							2. Go through a list of 10000 bulk tender procedures to find out what fits this purchase
+							3. Understand how the contract works
+							4. Inform vendors of our intention to purchase their product/service
+							5. Get a quotations from vendors
+							6. Choose 1 from the vendor quotations returned
+							7. Get an approval from our boss
+							8. Sign a contract with the vendor
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Total time taken
+							2 months if we're lucky
+
+							Usually a few months more
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Small Value Purchase (SVP)
+							(<= SGD5,000)
+
+							Usually for one-off equipment / office supply purchases
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### SVP process
+							1. Realise we need something
+							2. Get approval
+							3. Buy that thing
+							4. Get reimbursed from procurement/finance
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Total time taken
+							However long it takes we to buy that thing
+
+							Within the day? 1 hour?
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							What about using SVP for other things?
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Smaller stuff that would fit in the <= SGD5,000 price point
+							- Microservices, software libraries, non-critical bug fixes
+							- Maybe even custom hardware?
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							But why?
+
+							Don't we have an in-house software dev team now?
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Some technical spikes or non-critical bugs might not be prioritised in the product backlog
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Slowly introduce open-sourcing to government agencies
+
+							Involve community to contribute to government projects
+							(Not just big corporations)
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## How it works
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Pre-Auction
+							Project/Task will be scoped out:
+							- Task Description
+							- Acceptance Criteria
+							- Delivery Duration
+							- Auction start date
+							- Auction end date
+							- Starting bid (max SGD5,000)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Auction period
+							- Bidders make informed bids, based on task description, acceptance criteria and delivery duration
+							- Bids accepted until auction end date
+							- Lowest bid "wins" the auction
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Delivery period
+							- Winning bidder has until the end of delivery duration to finish the task
+							- Winning bidder can communicate to team via pull request discussions, emails, etc
+							- Winning bid amount will be awarded only if deliverables meet acceptance criteria within the delivery duration
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Conclusion
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							- More transparent way of engaging vendors and public
+							- Open review process improves code quality in gov systems
+							- Avenue for interested parties to learn and make small contributions to gov systems
+							- Less technical debt overall
+						</script>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
