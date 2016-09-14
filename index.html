@@ -27,15 +27,15 @@
 			<div class="slides">
 				<section data-markdown>
 					<script type="text/template">
-						# GovBuy
-						## (Micropurchase platform)
+						![](images/govbuy_lightblur.svg)
+						## Micropurchase platform
 						https://bit.ly/govBuy
 					</script>
 				</section>
 				<section>
 					<section data-markdown>
 						<script type="text/template">
-							How do we buy stuff in government?
+							How do we buy stuff as a government agency right now?
 
 							(From our perspective)
 						</script>
@@ -55,6 +55,9 @@
 
 							Most software and hardware systems in government are purchased this way
 						</script>
+					</section>
+					<section>
+						<p style="font-size:100px">😩</p>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
@@ -77,12 +80,15 @@
 							Usually a few months more
 						</script>
 					</section>
+					<section>
+						<p style="font-size:100px">😭</p>
+					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<script type="text/template">
 							## Small Value Purchase (SVP)
-							(<= SGD5,000)
+							(≤ SGD5,000)
 
 							Usually for one-off equipment / office supply purchases
 						</script>
@@ -104,17 +110,26 @@
 							Within the day? 1 hour?
 						</script>
 					</section>
+					<section>
+						<p style="font-size:100px">😁</p>
+					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						<script type="text/template">
 							What about using SVP for other things?
+
+							<p style="font-size:100px">🤔</p>
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
 							Smaller stuff that would fit in the <= SGD5,000 price point
-							- Microservices, software libraries, non-critical bug fixes
+							- Custom software
+								- Microservices
+								- Software libraries
+								- Non-critical bug fixes
+								- etc
 							- Maybe even custom hardware?
 						</script>
 					</section>
@@ -128,11 +143,13 @@
 					<section data-markdown>
 						<script type="text/template">
 							Some technical spikes or non-critical bugs might not be prioritised in the product backlog
+
+							<p style="font-size:100px">😕</p>
 						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							Slowly introduce open-sourcing to government agencies
+							Gradually introduce open-sourcing to government agencies
 
 							Involve community to contribute to government projects
 							(Not just big corporations)
@@ -147,8 +164,16 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
+							1. Pre-auction
+							2. Auction
+							3. Delivery
+							4. Payment
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
 							### Pre-Auction
-							Project/Task will be scoped out:
+							Auction listing created with:
 							- Task Description
 							- Acceptance Criteria
 							- Delivery Duration
@@ -157,10 +182,14 @@
 							- Starting bid (max SGD5,000)
 						</script>
 					</section>
+					<!-- <section data-background-image="images/screenshot.png"> -->
+					<section>
+						<img data-src="images/screenshot.png" height="650"/>
+					</section>
 					<section data-markdown>
 						<script type="text/template">
 							### Auction period
-							- Bidders make informed bids, based on task description, acceptance criteria and delivery duration
+							- Auction listed on the site
 							- Bids accepted until auction end date
 							- Lowest bid "wins" the auction
 						</script>
@@ -168,9 +197,15 @@
 					<section data-markdown>
 						<script type="text/template">
 							### Delivery period
-							- Winning bidder has until the end of delivery duration to finish the task
 							- Winning bidder can communicate to team via pull request discussions, emails, etc
-							- Winning bid amount will be awarded only if deliverables meet acceptance criteria within the delivery duration
+							- Winning bidder to finish task before deadline
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### Payment
+							- Via cheque
+							- Awarded only if deliverables meet acceptance criteria before deadline
 						</script>
 					</section>
 				</section>
@@ -182,11 +217,14 @@
 					</section>
 					<section data-markdown>
 						<script type="text/template">
-							- More transparent way of engaging vendors and public
+							- Transparent way of engaging vendors and public
 							- Open review process improves code quality in gov systems
 							- Avenue for interested parties to learn and make small contributions to gov systems
 							- Less technical debt overall
 						</script>
+					</section>
+					<section>
+						<p style="font-size:100px">🖖🏼</p>
 					</section>
 				</section>
 			</div>
