@@ -1,3 +1,3 @@
 A `reveal.js` presentation on GDS micropurchase platform trial.
 
-Visit http://idagds.github.io/mp-intro/
+Visit http://govtechsg.github.io/mp-intro/
